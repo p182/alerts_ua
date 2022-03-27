@@ -1,0 +1,41 @@
+{
+  "short_name": "Карта тривог",
+  "name": "Карта повітряних тривог України",
+  "icons": [
+    {
+      "src": "/favicon-bg.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "lang": "uk",
+  "start_url": "/alerts/",
+  "background_color": "#202124",
+  "display": "standalone",
+  "scope": "/alerts/",
+  "theme_color": "#202124",
+  "description": "Карта повітряних тривог України",
+  "icons": [
+    {
+      "src": "/alerts/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/alerts/icon-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/alerts/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/alerts/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
+
