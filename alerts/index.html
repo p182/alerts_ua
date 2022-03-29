@@ -65,7 +65,7 @@
 <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 <!--<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>-->
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
-<link href="style.28483da1aa790b5a740987a30dd7383e10a16f71.css" rel="stylesheet">
+<link href="style.f398f990c4eb55232e43268a0240d38392d114d6.css" rel="stylesheet">
 <link rel="manifest" href="manifest.json">
 
 
@@ -208,6 +208,7 @@
                         <div class="col col-3">🕒&nbsp;<strong>{{ formatDuration(alert.duration) }}</strong> </div>
                         <div class="col col-1"> <span v-if="alert.active">🚨</span>  {{ alert.location_title }}</div>
                         <div class="col col-2"><span class="mobile">Кількість сигналів тривог:&nbsp;</span> {{ alert.alert_count }}</div>
+                        <div class="daily-stats-progress"  v-bind:style="{ width: alert.duration_percentage + '%' }"></div>
                     </li>
                 </ul>
             </div>
@@ -285,7 +286,7 @@
 </div>
 </body>
 
-<script src="script.6687bf542213af34b39b969de45151eb30614534.js"></script>
+<script src="script.4dbd6c28d812a723c7c43bb5b2d7a7804b1030f7.js"></script>
 <script src="https://kit.fontawesome.com/7b1b7d7332.js" crossorigin="anonymous"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-TNT78NZJBK"></script>
