@@ -1,4 +1,4 @@
-<html lang="uk" >
+<html lang="uk">
 <meta charset="utf-8">
 <title>Карта повітряних тривог України</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -206,7 +206,7 @@
                     </div>
                     <li class="table-row " v-for="alert in dailyDuration.data">
                         <div class="col col-3">🕒&nbsp;<strong>{{ formatDuration(alert.duration) }}</strong> </div>
-                        <div class="col col-1"> {{ alert.location_title }}</div>
+                        <div class="col col-1"> <span v-if="alert.active">🚨</span>  {{ alert.location_title }}</div>
                         <div class="col col-2"><span class="mobile">Кількість сигналів тривог:&nbsp;</span> {{ alert.alert_count }}</div>
                     </li>
                 </ul>
@@ -243,9 +243,9 @@
             <p><a href="https://vadimklimenko.com/map/" target="_blank">
                 єМапа - Мапа сирен України
             </a>
+            </p>
             <p>
                 <a href="https://alarmmap.online/" target="_blank">Повітряна тривога в Україні</a>
-            </p>
             </p>
 
             <strong>Хто розробники сайту?</strong>
@@ -273,9 +273,9 @@
         <div class="tab " v-on:click="screen='list'" v-bind:class="{ active: screen=='list'}">
             <i class="fa-regular fa-rectangle-list"></i>
         </div>
-<!--        <div class="tab " v-on:click="screen='daily-duration';fetchDailyDuration()" v-bind:class="{ active: screen=='daily-duration'}">-->
-<!--            <i class="fa-regular fa-hourglass"></i>-->
-<!--        </div>-->
+        <div class="tab " v-on:click="screen='daily-duration';fetchDailyDuration()" v-bind:class="{ active: screen=='daily-duration'}">
+            <i class="fa-regular fa-hourglass"></i>
+        </div>
         <div class="tab " v-on:click="screen='config'" v-bind:class="{ active: screen=='config'}">
             <i class="fa-solid fa-circle-question"></i>
         </div>
@@ -285,7 +285,7 @@
 </div>
 </body>
 
-<script src="script.1f820f8ee1b73a1948b25b085ef1b3c9cf290811.js"></script>
+<script src="script.6687bf542213af34b39b969de45151eb30614534.js"></script>
 <script src="https://kit.fontawesome.com/7b1b7d7332.js" crossorigin="anonymous"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-TNT78NZJBK"></script>
